@@ -6,6 +6,7 @@ import 'package:flutter_shopping_app/screens/home/details/components/Description
 import 'package:flutter_shopping_app/screens/home/details/components/color_and_size.dart';
 
 import '../../../../models/Product.dart';
+import 'cart_counter.dart';
 import 'product_title_with_image.dart';
 
 class Body extends StatelessWidget {
@@ -36,7 +37,11 @@ class Body extends StatelessWidget {
                             topRight: Radius.circular(24))),
 
                     child: Column(
-                      children: [ColorandSize(), Description(product: product)],
+                      children: [
+                        ColorandSize(),
+                        Description(product: product),
+                        CartCounter()
+                      ],
                     ),
                   ),
                   ProductTitleWithTitle(product: product)
