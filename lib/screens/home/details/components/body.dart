@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_shopping_app/constants.dart';
+import 'package:flutter_shopping_app/screens/home/details/components/Description.dart';
 import 'package:flutter_shopping_app/screens/home/details/components/color_and_size.dart';
 
 import '../../../../models/Product.dart';
@@ -35,7 +36,7 @@ class Body extends StatelessWidget {
                             topRight: Radius.circular(24))),
 
                     child: Column(
-                      children: [ColorandSize()],
+                      children: [ColorandSize(), Description(product: product)],
                     ),
                   ),
                   ProductTitleWithTitle(product: product)
