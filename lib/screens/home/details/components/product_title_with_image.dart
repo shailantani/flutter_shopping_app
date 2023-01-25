@@ -24,7 +24,7 @@ class ProductTitleWithTitle extends StatelessWidget {
             product.name,
             style: Theme.of(context)
                 .textTheme
-                .headline4
+                .headlineMedium
                 ?.copyWith(color: Colors.white, fontWeight: FontWeight.bold),
           ),
           SizedBox(
@@ -38,8 +38,12 @@ class ProductTitleWithTitle extends StatelessWidget {
                     TextSpan(text: "Price\n"),
                     TextSpan(
                         text: "\₹${product.price}",
-                        style: Theme.of(context).textTheme.headline4?.copyWith(
-                            color: Colors.white, fontWeight: FontWeight.bold))
+                        style: Theme.of(context)
+                            .textTheme
+                            .headlineMedium
+                            ?.copyWith(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold))
                   ],
                 ),
               ),
