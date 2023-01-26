@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_shopping_app/constants.dart';
+import 'package:flutter_shopping_app/screens/home/details/components/Counter_With_Fav_Btn.dart';
 import 'package:flutter_shopping_app/screens/home/details/components/Description.dart';
 import 'package:flutter_shopping_app/screens/home/details/components/color_and_size.dart';
 
@@ -40,7 +41,7 @@ class Body extends StatelessWidget {
                       children: [
                         ColorandSize(),
                         Description(product: product),
-                        CartCounter()
+                        CounterWithFavBtn()
                       ],
                     ),
                   ),
