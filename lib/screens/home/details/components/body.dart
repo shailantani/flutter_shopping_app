@@ -41,7 +41,44 @@ class Body extends StatelessWidget {
                       children: [
                         ColorandSize(),
                         Description(product: product),
-                        CounterWithFavBtn()
+                        CounterWithFavBtn(),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(
+                              vertical: kDefaultPaddin),
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 50,
+                                width: 58,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(18),
+                                    border: Border.all(color: product.color)),
+                                child: IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(Icons.shopping_cart)),
+                              ),
+                              SizedBox(
+                                height: 50,
+                                child: Container(
+                                  height: 90,
+                                  width: 58,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(18),
+                                      border: Border.all(color: product.color)),
+                                  child: TextButton(
+                                      onPressed: () {},
+                                      child: Text(
+                                        "Buy now".toUpperCase(),
+                                        style: TextStyle(
+                                            fontSize: 15,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.black),
+                                      )),
+                                ),
+                              )
+                            ],
+                          ),
+                        )
                       ],
                     ),
                   ),
